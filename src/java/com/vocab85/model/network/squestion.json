@@ -1,0 +1,56 @@
+{
+    "map": {
+        "list": [],
+        "list1": [{
+                "fpagepartid": "479835C4-CDA4-41A9-9597-975F759DF76A",
+                "fid": "E306A064-1237-4EA2-92BC-D260596CB14C",
+                "fquestionid": "1BA01FAE-F9B9-429B-BEC4-9E92A5235B42",
+                "fquestiontext": "",
+                "ftype": "1",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-001",
+                "forignalpic": "http://server.1000classes.com/bmcserver/attachment/2020-02/2c0c7215-8a14-49c2-8f1f-a999637ce7ab.jpg",
+                "fxzquestchildid": "",
+                "frightanswer": "D",
+                "ferrorratio": "10.00"
+            }],
+        "list2": [{
+                "foptions": "",
+                "foptionsvalue": "A",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-001",
+                "fright": "0",
+                "fchoice": "0"
+            }, {
+                "foptions": "",
+                "foptionsvalue": "B",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-001",
+                "fright": "0",
+                "fchoice": "1"
+            }, {
+                "foptions": "",
+                "foptionsvalue": "C",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-001",
+                "fright": "0",
+                "fchoice": "0"
+            }, {
+                "foptions": "",
+                "foptionsvalue": "D",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-001",
+                "fright": "1",
+                "fchoice": "0"
+            }],
+        "list3": [{
+                "fanalysistext": "--",
+                "fsummary": ""
+            }],
+        "list4": [],
+        "list5": [],
+        "list6": [],
+        "list7": [],
+        "list8": [{
+                "fpicid": "21c208bbe6a346c1b41deffb9a1bcdc2.jpg",
+                "fpicurl": "http://server.1000classes.com/bmcserver/attachment/2020-07/21c208bbe6a346c1b41deffb9a1bcdc2.jpg"
+            }],
+        "result": 1,
+        "msg": "成功"
+    }
+}

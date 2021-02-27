@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--
+Author: jianqing
+Date: Sep 3, 2020
+Description: This document is created for
+-->
+<html>
+    <head>
+        <title>小测答案</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .text-center
+            {
+                text-align: center !important;
+            }
+        </style>
+    </head>
+    <body class="text-center">
+        <h1 class="text-center">
+            Angle老师 终于来啦
+        </h1>
+        <h4>
+            这只是一个临时页面，目前正在建设永久页面。
+        </h4>
+        
+        <h5>
+            
+        </h5>
+        
+        <table style="margin:auto;">
+            <th>
+                题目编号
+            </th>
+            <th>
+                答案
+            </th>
+            <tr>
+                <td>
+                    1
+                    <!--题目编号-->
+                </td>
+                <td>
+                    B
+                    <!--答案-->
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    2
+                    <!--题目编号-->
+                </td>
+                <td>
+                    C
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                    <!--题目编号-->
+                </td>
+                <td>
+                    C(手下留情)
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                    <!--题目编号-->
+                </td>
+                <td>
+                    A
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                    <!--题目编号-->
+                </td>
+                <td>
+                    C
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    6
+                    <!--题目编号-->
+                </td>
+                <td>
+                    D
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7
+                    <!--题目编号-->
+                </td>
+                <td>
+                    A
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    8
+                    <!--题目编号-->
+                </td>
+                <td>
+                    B
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9
+                    <!--题目编号-->
+                </td>
+                <td>
+                    C
+                    <!--答案-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    10
+                    <!--题目编号-->
+                </td>
+                <td>
+                    B
+                    <!--答案-->
+                </td>
+            </tr>
+            
+            
+        </table>
+        
+        上传小测解析（如果存在）
+        <form method="POST" enctype="multipart/form-data" id="form1">
+            <input type="file" name="file">
+            <button onclick="request('https://server.1000classes.com/bmcserver/UpHomework')" type="button">提交</button>
+        </form>
+
+        <br><br>
+        <div id="result-div">
+
+            小测解析URL: <a id="result" target="_blank">
+
+            </a>
+            <strong id="error"></strong>
+
+           复制URL可以微信给我
+        </div>
+
+    </body>
+
+    <script>
+        var currenturl;
+        function request(url) {
+            const Http = new XMLHttpRequest();
+            //const url =;
+            Http.open("POST", url);
+
+            Http.send(new FormData(document.getElementById("form1")));
+            Http.onreadystatechange = (e) => {
+                console.log(Http.responseText);
+                var jobj = JSON.parse(Http.responseText);
+                var msg = jobj.msg;
+                if (msg === "ok")
+                {
+                    var jurl = jobj.picurl;
+                    document.getElementById("result").innerHTML = jurl;
+                    document.getElementById("result").href = jurl;
+                    document.getElementById("error").innerHTML = "";
+                    currenturl = jurl;
+                } else
+                {
+                    document.getElementById("error").innerHTML = "TMD BMC服务器又崩掉了 Error: " + msg;
+                    document.getElementById("result").innerHTML = "";
+                    currenturl = "";
+                }
+
+            };
+        }
+
+        function copy() {
+            var finp = document.createElement("input");
+            finp.value = currenturl;
+            finp.style="display:none;";
+            document.getElementsByTagName("body")[0].appendChild(finp);
+            finp.select();
+            finp.setSelectionRange(0, 99999);
+            
+            document.execCommand("copy");
+
+
+        }
+        ;
+    </script>
+        
+    </body>
+</html>

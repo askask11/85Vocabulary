@@ -1,0 +1,9 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %> 
+<!--Waifu kit css-->
+<link href='Pio/static/pio.css' rel='stylesheet' type='text/css'/>
+<!-- Live2D for waifu -->
+<script src='Pio/static/l2d.js' ></script>
+<!-- Waifu interactive js -->
+<script src='Pio/static/pio.js' ></script>
+<script src='Pio/static/extra.js' ></script>

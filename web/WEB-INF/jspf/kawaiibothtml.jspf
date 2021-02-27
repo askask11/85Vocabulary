@@ -1,0 +1,32 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="pio-container left no-print">
+    <div class="pio-action"></div>
+    <canvas id="pio" width="250" height="250">Your browser does not support canvas.</canvas>
+</div>
+<script>
+    (function initPio() {
+        var pio = new Paul_Pio({
+            "mode": "draggable",
+            "hidden": false,
+            "content": {
+                "welcome": ["你好，欢迎来到85背单词", "欢迎欢迎 热烈欢迎"],
+                "touch": ["你这个绅士！", "我很害羞哒！"],
+                "skin": ["想看看我的新服装吗？", "新衣服真漂亮~"],
+                "home": "点击这里回到首页！",
+                "link": "https://85vocab.com",
+                "close": "QWQ 有缘再会吧~",
+               // "referer": "你通过 %t 来到了这里",
+                "custom": [
+                    {
+                        "selector": ".comment-form",
+                        "text": ["欢迎参与本文评论，别发小广告噢~", "快来参加本文的评论吧~"]
+                    }
+                ]
+            },
+            "model": ["Pio/models/pio/model.json"],
+            "tips": true,
+            "listentitle":true
+        });
+    })();
+</script>

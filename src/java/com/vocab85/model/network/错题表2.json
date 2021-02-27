@@ -1,0 +1,33 @@
+{
+    "map": {
+        "list": [{
+                "fhomework": "篇章-SAT基础-Science-L2-P1",
+                "fprojectname": "sat",
+                "fsubdate": "2020-07-29",
+                "fmark": "",
+                "errornum": "2",
+                "emptynum": "0",
+                "rightnum": "9",
+                "ftype": "1",
+                "fmockid": "",
+                "fsmalllogourl": "attachment/2019-12/9da755e0-115c-4c74-8326-d1ce392d2395.png"
+            }],
+        "list1": [{
+                "fserial": "1",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-001",
+                "fanswer": "B",
+                "fistruck": "1",
+                "frighttxt": "D",
+                "fright": "false"
+            }, {
+                "fserial": "8",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-008",
+                "fanswer": "B",
+                "fistruck": "1",
+                "frighttxt": "C",
+                "fright": "false"
+            }],
+        "result": 1,
+        "msg": "成功"
+    }
+}

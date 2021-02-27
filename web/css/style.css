@@ -1,0 +1,36 @@
+/*
+Author: jianqing
+Date: Jun 26, 2020
+Description: This document is created for
+*/
+
+
+#submitResultIframe
+{
+    width: 100%;
+    border: none;
+}
+
+.transparent
+{
+    background-color: rgba(255,255,255,0);
+    border: 0px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.invisible
+{
+    visibility: hidden;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

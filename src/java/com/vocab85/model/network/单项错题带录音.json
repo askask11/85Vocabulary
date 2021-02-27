@@ -1,0 +1,65 @@
+{
+    "map": {
+        "list": [{
+                "fquestionid": "1BA01FAE-F9B9-429B-BEC4-9E92A5235B42",
+                "fid": "2E02E101-AB58-4906-8EB4-171D15B28AC1",
+                "foginalpic": "http://server.1000classes.com/bmcserver/attachment/2020-02/f5ccb6ee-c7c0-4133-907b-828e8dd46be0.jpg",
+                "ferrorratio": "30.00"
+            }],
+        "list1": [{
+                "fpagepartid": "479835C4-CDA4-41A9-9597-975F759DF76A",
+                "fid": "71AC6C72-65CE-457F-90DC-086F0000EAD7",
+                "fquestionid": "1BA01FAE-F9B9-429B-BEC4-9E92A5235B42",
+                "fquestiontext": "",
+                "ftype": "1",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-008",
+                "forignalpic": "http://server.1000classes.com/bmcserver/attachment/2020-02/30962073-1b3f-4d8b-962b-ce525be1a75d.jpg",
+                "fxzquestchildid": "",
+                "frightanswer": "C"
+            }],
+        "list2": [{
+                "foptions": "",
+                "foptionsvalue": "A",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-008",
+                "fright": "0",
+                "fchoice": "0"
+            }, {
+                "foptions": "",
+                "foptionsvalue": "B",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-008",
+                "fright": "0",
+                "fchoice": "1"
+            }, {
+                "foptions": "",
+                "foptionsvalue": "C",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-008",
+                "fright": "1",
+                "fchoice": "0"
+            }, {
+                "foptions": "",
+                "foptionsvalue": "D",
+                "fquestionchildno": "SAT-基础-Science-L2-P1-008",
+                "fright": "0",
+                "fchoice": "0"
+            }],
+        "list3": [{
+                "fanalysistext": "This is some analysis text, this is used intended for developing the cuoti app.",
+                "fsummary": "some text"
+            }],
+        "list4": [],
+        "list5": [],
+        "list6": [{
+                "fanalysistext": ""
+            }],
+        "list7": [],
+        "list8": [{
+                "fpicid": "42b46c1ed9da4cf3ac101d6f70f0a778.jpg",
+                "fpicurl": "http://server.1000classes.com/bmcserver/attachment/2020-07/42b46c1ed9da4cf3ac101d6f70f0a778.jpg"
+            }, {
+                "fpicid": "cf00a7bed3be4f24b02a0469b9059207.jpg",
+                "fpicurl": "http://server.1000classes.com/bmcserver/attachment/2020-07/cf00a7bed3be4f24b02a0469b9059207.jpg"
+            }],
+        "result": 1,
+        "msg": "成功"
+    }
+}

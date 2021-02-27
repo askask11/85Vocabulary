@@ -1,0 +1,10 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<footer class="text-center footer">
+    <hr>
+    <strong>85vocab.com</strong>
+    <br>
+    ICP备案号：<a href="http://beian.miit.gov.cn">粤ICP备2020113241号-1</a>
+    <br>高健卿 制作
+    联系方式 <a href="mailto:support@85vocab.com">support@85vocab.com</a>
+</footer>

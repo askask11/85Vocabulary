@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow:/RequestCheat/
+Disallow:/Pio/
+Disallow:/WEB-INF/

@@ -1,0 +1,119 @@
+{
+    "map": {
+        "list": [{
+                "fstarttime": "2020-07-02"
+            }, {
+                "fstarttime": "2020-07-03"
+            }, {
+                "fstarttime": "2020-07-04"
+            }, {
+                "fstarttime": "2020-07-05"
+            }, {
+                "fstarttime": "2020-07-06"
+            }, {
+                "fstarttime": "2020-07-09"
+            }, {
+                "fstarttime": "2020-07-10"
+            }, {
+                "fstarttime": "2020-07-11"
+            }, {
+                "fstarttime": "2020-07-12"
+            }, {
+                "fstarttime": "2020-07-13"
+            }, {
+                "fstarttime": "2020-07-14"
+            }, {
+                "fstarttime": "2020-07-15"
+            }, {
+                "fstarttime": "2020-07-17"
+            }, {
+                "fstarttime": "2020-07-18"
+            }, {
+                "fstarttime": "2020-07-20"
+            }, {
+                "fstarttime": "2020-07-21"
+            }, {
+                "fstarttime": "2020-07-22"
+            }, {
+                "fstarttime": "2020-07-23"
+            }, {
+                "fstarttime": "2020-07-25"
+            }, {
+                "fstarttime": "2020-07-27"
+            }, {
+                "fstarttime": "2020-07-28"
+            }, {
+                "fstarttime": "2020-07-29"
+            }, {
+                "fstarttime": "2020-07-30"
+            }, {
+                "fstarttime": "2020-07-31"
+            }],
+        "list1": [{
+                "fid": "39647841-ACD4-4C5C-88FD-A5850336C839",
+                "ftaskid": "2952DBAA-E757-4BCB-BC55-4292AC4A6CDF",
+                "ftaskname": "OG1-S4",
+                "ftasktitle": "OG1-S4",
+                "fstarttime": "2020-07-29 00:00",
+                "fpagename": "",
+                "ftype": "1",
+                "fstatus": "1",
+                "fplantime": "45",
+                "fnum": "38",
+                "fendtime": "2020-07-29 23:00",
+                "fsubject": "1004",
+                "fprojectname": "数学S4限时",
+                "ftaskurl": "http://",
+                "frate": "94",
+                "ffacestatus": "0",
+                "fmockid": "",
+                "fsubtype": "1",
+                "fmarkflag": "false",
+                "fmocksubmittype": ""
+            }, {
+                "fid": "FFB7C309-B6D9-4CBF-8CC5-ADC2E0FDDA4D",
+                "ftaskid": "01E04DAE-49EA-47BE-837C-6B462042B54F",
+                "ftaskname": "OG1-S3",
+                "ftasktitle": "OG1-S3",
+                "fstarttime": "2020-07-29 00:00",
+                "fpagename": "",
+                "ftype": "1",
+                "fstatus": "1",
+                "fplantime": "15",
+                "fnum": "20",
+                "fendtime": "2020-07-29 23:00",
+                "fsubject": "1003",
+                "fprojectname": "数学S3限时",
+                "ftaskurl": "http://",
+                "frate": "100",
+                "ffacestatus": "0",
+                "fmockid": "",
+                "fsubtype": "1",
+                "fmarkflag": "false",
+                "fmocksubmittype": ""
+            }, {
+                "fid": "354ED5C8-941C-4913-86DB-EDB4A016A513",
+                "ftaskid": "F5269E04-C6CF-41BB-A7F8-1A6058425240",
+                "ftaskname": "Science-L2-P1",
+                "ftasktitle": "Science-L2-P1",
+                "fstarttime": "2020-07-29 00:00",
+                "fpagename": "",
+                "ftype": "1",
+                "fstatus": "1",
+                "fplantime": "12",
+                "fnum": "11",
+                "fendtime": "2020-07-29 23:00",
+                "fsubject": "6002\r\n",
+                "fprojectname": "",
+                "ftaskurl": "http://",
+                "frate": "81",
+                "ffacestatus": "0",
+                "fmockid": "",
+                "fsubtype": "1",
+                "fmarkflag": "false",
+                "fmocksubmittype": ""
+            }],
+        "result": 1,
+        "msg": "成功"
+    }
+}
