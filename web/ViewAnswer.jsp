@@ -18,7 +18,7 @@
         <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropzone@5.7.2/dist/basic.css" integrity="sha256-NI6EfwSJhhs7gXBPbwLXD00msI29Bku3GDJT8gYW+gc=" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropzone@5.7.2/dist/dropzone.css" integrity="sha256-3SE+Qz2RvIa5gOHSNS50MUTTzRAOYREA5+DOmMNFPYk=" crossorigin="anonymous">
         <!--<script src="https://cdn.jsdelivr.net/npm/dropzone@5.7.2/dist/dropzone-amd-module.js" integrity="sha256-oxbkaoOqNIsKBLeLZDlzoylH9F4+WdAKBTzMnc0U1TU=" crossorigin="anonymous"></script>-->
-        <script src="https://cdn.jsdelivr.net/gh/askask11/dropzone/dist/dropzone.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dropzone@5.7.6/dist/dropzone.min.js"></script>
         <!--<script src="https://cdn.jsdelivr.net/npm/dropzone@5.7.2/dist/min/dropzone-amd-module.min.js" integrity="sha256-UBOJJ6R/blhj7yI1qhmeer5QDx7Mql0IqYUKgMXRXI8=" crossorigin="anonymous"></script>-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropzone@5.7.2/dist/dropzone.css" integrity="sha256-3SE+Qz2RvIa5gOHSNS50MUTTzRAOYREA5+DOmMNFPYk=" crossorigin="anonymous">
         <!--<link rel="stylesheet" href="https://www.dropzonejs.com/css/style.css?v=1595510599">-->

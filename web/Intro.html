@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- 
+作者：高健卿
+风变科技第1关
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+        <title>85背单词功能介绍</title>
+        <style>
+            a {
+                text-decoration: none;
+            }
+
+            body {
+                margin: 0;
+                width:100%;
+                height: 100%;
+                font-family: 'Noto Serif SC', serif !important;
+                line-height: 1.5;
+            }
+
+
+            #header {
+                background-color:#e9ecef;/*#0c1f27;*/
+                /*color:#20b2aa;*/
+                text-align:center;
+                padding:45px;
+            }
+
+            #nav {
+                line-height:60px;
+                background-color:#e0f2f0;
+                width:80px;
+                padding:30px;
+                position: absolute;
+                left: 0;
+                top:0;
+                bottom: 0;
+            }
+
+            #footer {
+                /*background-color:#0c1f27;
+                color:#20b2aa;*/
+                clear:both;
+                text-align:center;
+                padding:35px;
+            }
+
+            #main {
+                /* margin-left: 140px;
+                 padding-left: 150px;
+                 padding-right: 220px;*/
+                overflow: scroll;
+                align-items: flex-start;
+            }
+
+            #article {
+                display: flex;
+                position: relative;
+            }
+
+            .catlog{
+                font-size:20px;
+                color:black;
+                font-family: sans-serif;
+            }
+
+            .title {
+                color:#20b2aa;
+                font-size:20px;
+            }
+
+            .img {
+                width: 80%;
+            }
+            /*我自己的class*/
+            .centralized
+            {
+                text-align: center;
+                margin: auto;
+            }
+
+            img.centralized
+            {
+                display: block;
+
+            }
+            .margined
+            {
+                margin-bottom: 18px;
+            }
+            a.margined
+            {
+                display: block;
+            }
+        </style>
+
+        <!--中国国内速度最快的源：Bootstrap 框架引进-->
+        <!--BS CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ=" crossorigin="anonymous">
+        <!--Libraries-->
+        <!--JQuery-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!--Popper.js-->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!--Boostrap.js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+
+    </head>
+
+    <body >
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="color: white;">
+            <a class="navbar-brand" href="#">85背单词&#128175;</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index" title="前往本站的主页">&#127968; 主页</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="这里可以一键下载你当天的BMC作业，无需登录系统。" href="FindHomework">&#128421; 作业下载</a>
+                    </li>
+
+
+                    <li class="nav-item" >
+                        <a class="nav-link" title="这里可以一键生成你某天BMC作业的错题本。包含你的订正，可分享，可打印" href="RequestFQuestion">&#10060; 一键生成错题本</a>
+                    </li>
+
+                    <li class="nav-item" >
+                        <a class="nav-link" title="嘘~这是我和小天使的秘密" href="RequestQuizAnswer">&#128519; 安琪小天使专用</a>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+        <div id="header">
+            <h1 style="font-size:50px;">85背单词APP功能介绍</h1>
+        </div>
+
+        <div id="article">
+            <!-- A vertical navbar -->
+            <nav class="navbar bg-light" style="width:11%; align-items: flex-start;">
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index">&#127968; 返回主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s1">&#128421; 作业下载</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s2">&#10060; 错题报告</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s3">&#128519; 周测管理</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div id="main" class="container">
+                <br><br>
+                <div id="s1" class="books">
+                    <h3 class="margined"><a name="type1">作业下载</a></h3>
+                    <a href="FindHomework" class="title margined">绕过官方系统繁琐步骤，免登陆一键下载</a>
+                    <p class="info">帮我背单词APP一大亮点：简洁。绕开官方系统的繁琐步骤，无需登录既可直接下载你的作业。系统自动把所有作业生成一个pdf，再也不用去日历里找作业了！效率提升，事倍功半</p>
+
+                    <img class="centralized" src="https://img.85vocab.com/images/85vocab-hw.gif" style="width:80%;">
+                    <br>
+                    <br>
+                    <hr size="1">
+                </div>
+                <div id="s2" class="books">
+                    <h3><a class="margined" name="type2">作业报告</a></h3>
+                    <a href="RequestFQuestion" class="margined" class="title">一键为您量身定制错题本，摆脱重复工作</a>
+                    <p class="info">无需复制粘贴：小手轻轻一点，量身定做你的错题报告！还可以一键生成微信分享消息哦！
+
+                    </p>
+                    <div class="text-center">
+
+
+                        <img class="centralized" src="https://img.85vocab.com/images/85vocab%20report.gif" style="width:80%;">
+
+
+
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">微信消息</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        微信消息预览：<span id="copySuccess" style="color: green;display: none;">✅复制成功！</span>
+                                        <textarea id="wechatMessage" style="height: 500px; width: 100%;margin: auto;" readonly spellcheck="false">【高健卿同学2020-09-22的专属错题本】
+ 完整错题本请访问: https://sourl.cn/nkpfwy
+
+******特殊作业列表********
+
+📌未交作业数量: 0
+📱视频面测数量: 0
+
+******已提交作业列表********
+
+⭐️OG4-S4-数学考试-计算器
+   -✅正确题目数量: 36
+   -❌错误题目数量: 2
+   -👀空白题目数量: 0
+
+⭐️OG3-S3-数学测试-无计算器
+   -✅正确题目数量: 19
+   -❌错误题目数量: 1
+   -👀空白题目数量: 0
+
+
+**********85vocab.com***********</textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                        <button type="button" id="cpwc" class="btn btn-primary .btn-success" clipboard-action="copy" data-clipboard-target="#wechatMessage">复制</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                            <img src="https://img.85vocab.com/icons/wechat.svg" width="23">
+                            微信消息示例
+                        </button>
+
+                    </div>
+                </div>
+                <br>
+                <br>
+                <hr size="1">
+                <div id="s3" class="books">
+                    <h3 class="margined">
+                        <a name="type3">
+                            周测系统
+                        </a>
+                    </h3>
+
+                    <a href="https://85vocab.com/RequestQuizAnswer?id=1" class="title margined">针对周测设计的批改系统，方便了师生交流，答案管理和成绩统计。</a>
+                    <div id="accordion">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    1对1私人化辅导订正
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <img class="img" src="https://img.85vocab.com/images/giveanswer.gif"  alt="改分">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    人工智能助力分数统计
+                                    <!--人工智能的定义：先人工再智能-->
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <img class="img" src="https://img.85vocab.com/images/givescore.gif" alt="改分2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    最贴心的答案管理
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <img class="img" src="https://img.85vocab.com/images/upanswer.png" alt="上传">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="info"></p>
+
+                    <br>
+                    <br>
+                    <hr size="1">
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div id="footer">
+            制作：高健卿<br>
+            联系：support@jianqinggao.com<br>
+            ICP备案号：<a href="http://beian.miit.gov.cn">粤ICP备2020113241号</a>, 经批准允许入中国大陆网。
+        </div>
+        <script>new ClipboardJS('#cpwc');
+
+            document.getElementById("cpwc").addEventListener("click", (e) => {
+                $("#copySuccess").fadeIn("slow");
+            });
+        </script>
+    </body></html>
