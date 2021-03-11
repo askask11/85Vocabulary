@@ -4,7 +4,32 @@
     <hr>
     <strong>85vocab.com</strong>
     <br>
-    ICP备案号：<a href="http://beian.miit.gov.cn">粤ICP备2020113241号</a>
-    <br>高健卿 制作
-    联系方式 <a href="mailto:support@85vocab.com">support@85vocab.com</a>
+    <span id="footer-icp">ICP备案号：</span><a href="http://beian.miit.gov.cn">粤ICP备2020113241号</a>
+    <br><span id="footer-author">高健卿 制作</span>
+    <span id="footer-contact">联系方式</span> <a href="mailto:support@85vocab.com">support@85vocab.com</a>
 </footer>
+<script>
+    var translator;
+    
+    function makeTranslator(page)
+    {
+        $.get("translations/" + page + ".json", function (data, status) {
+                if (status === "success")
+                {
+                    translator = new MultiLanguage("cn", data);
+                    $.get("translations/navbar.json", (data, status) => {
+                        translator.addSheet(data);
+                        $.get("translations/footer.json", (data, status) => {
+                            translator.addSheet(data);
+                            
+                            translator.registerSelect(document.getElementById("languageSelect"));
+                        });
+                    });
+
+                } else
+                {
+                    console.log("Failed to load external sheet!");
+                }
+            });
+    }
+</script>

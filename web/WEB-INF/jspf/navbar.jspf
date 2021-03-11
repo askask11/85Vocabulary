@@ -5,14 +5,14 @@
 <!--${webAnnoucement}-->
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="color: white;">
-    <a class="navbar-brand" href="#">85背单词&#128175;</a>
+    <a class="navbar-brand" href="#"><span id="website-title">85背单词</span>&#128175;</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link ${path.equals("/index.jsp")?"active":""}" href="index" title="前往本站的主页">&#127968; 主页</a>
+                <a class="nav-link ${path.equals("/index.jsp")?"active":""}" href="index" title="前往本站的主页">&#127968; <span id="nav-mainpage">主页</span></a>
             </li>
             <c:if test="${vocabAnswerList!=null}">
                 <li class='nav-item '>
@@ -20,23 +20,28 @@
                 </li>
             </c:if>
             <li class="nav-item">
-                <a class="nav-link ${path.equals("/FindHomework.jsp")?"active":""}" title="这里可以一键下载你当天的BMC作业，无需登录系统。" href="FindHomework">&#128421; 作业下载</a>
+                <a class="nav-link ${path.equals("/FindHomework.jsp")?"active":""}" title="这里可以一键下载你当天的BMC作业，无需登录系统。" href="FindHomework">&#128421; <span id="nav-downloadhw">作业下载</span></a>
             </li>
-           <!-- <li>
-                <a class="nav-link" href="MyWrongWords">
-                    &#10060; 我的错词
-                </a>
-            </li>-->
-           
-           
-               <li class="nav-item" >
-                <a class="nav-link ${path.equals("/RequestFQuestion.jsp")||path.equals("/FQuestionBook.jsp")?"active":""}" title="这里可以一键生成你某天BMC作业的错题本。包含你的订正，可分享，可打印" href="RequestFQuestion">&#10060; 一键生成错题本</a>
-            </li>
-           
+            <!-- <li>
+                 <a class="nav-link" href="MyWrongWords">
+                     &#10060; 我的错词
+                 </a>
+             </li>-->
+
+
             <li class="nav-item" >
-                <a class="nav-link ${path.equals("/RequestQuizAnswer.jsp")||path.equals("/ViewAnswer.jsp")?"active":""}" title="嘘~这是我和小天使的秘密" href="RequestQuizAnswer">&#128519; 安琪小天使专用</a>
+                <a class="nav-link ${path.equals("/RequestFQuestion.jsp")||path.equals("/FQuestionBook.jsp")?"active":""}" title="这里可以一键生成你某天BMC作业的错题本。包含你的订正，可分享，可打印" href="RequestFQuestion">&#10060; <span id="nav-wbook">一键生成错题本</span></a>
+            </li>
+
+            <li class="nav-item" >
+                <a class="nav-link ${path.equals("/RequestQuizAnswer.jsp")||path.equals("/ViewAnswer.jsp")?"active":""}" title="嘘~这是我和小天使的秘密" href="RequestQuizAnswer">&#128519; <span id="nav-weeklyquiz">安琪小天使专用</span></a>
             </li>
         </ul>
+        &#127760;语言/Language&nbsp;&nbsp;
+        <select class="form-control" id="languageSelect" style="width: inherit !important;">
+            <option value="cn">简体中文</option>
+            <option value="en">English</option>
+        </select> 
     </div>  
 </nav>
 

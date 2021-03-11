@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>测试答案</title>
+        <title id="title">测试答案</title>
         <script>
             var pioWelcome = ["欢迎亲爱的小天使~.{timetip}", "欢迎小仙女来改我的试卷~\n {timetip}", "很高兴见到你,安淇! \n {timetip}"];
         </script>
@@ -45,14 +45,15 @@
         <div class="jumbotron text-center" style="background-color: #ecf9ff;">
             <br>
 
-            <h1 title="对就是可爱的你~">
+            <h1 id="ts1" title="对就是可爱的你~">
                 &#128519; 可爱的Angel终于来啦！ 
             </h1>
 
-            <span title="就...就在下面哦!"> 输入测试ID看看我做得怎么样吧</span>
+            <span id="ts2" title="就...就在下面哦!"> 输入测试ID看看我做得怎么样吧</span>
             <br>
             <br>
-            <img title="喜欢这张图片吗？"
+            <img 
+                title="喜欢这张图片吗？"
                  src="https://img.85vocab.com/bq/aini1.jpg"
                  id="mainImage" alt="random image">
 
@@ -81,7 +82,7 @@
                     <!--User input area-->
                     <div class="animated-text-input-container text-center" style="margin:auto;" id="password-input">
                         <input type="text" value="${param.id}" required title="在这里输入我们的暗号才能继续哦~" name="id"  autocomplete="off" id="idInput" />
-                        <label class="label-name"><span class="content-name">输入秘密暗号以继续</span></label>
+                        <label class="label-name"><span class="content-name" id="t4">输入秘密暗号以继续</span></label>
                     </div><br>
                     <div>
                         <!--<label for="licenseCheckbox" id="licenseCheckboxParent">
@@ -101,8 +102,9 @@
                             type="submit"
 
                             style="background-color: #0099ff; display: block; margin: auto;"
-                            title="点击即可提交哦~">
-                        <span>
+                            title="点击即可提交哦~"
+                            id="submitbtn">
+                        <span id="ts5">
                             提交
                         </span>
                     </button>
@@ -141,7 +143,7 @@
 
 
         <div id="post-submit" class="text-center hidden" title="请稍等哦！ 爱你~">
-            正在查询，请稍等哦~<br><br>
+            <span id="ts7">正在查询，请稍等哦~</span><br><br>
             <%@include file="/WEB-INF/jspf/lds-loader.jspf" %>
         </div>
         <!--<audio id="clip">
@@ -367,6 +369,6 @@
                 musicdoc.play();
             }
         }
-
+        makeTranslator("RequestQuizAnswer");
     </script>
 </html>

@@ -26,6 +26,9 @@
 <!--main script-->
 <script src="js/mainasync.js" async></script>
 <script src="js/main.js"></script>
+<!--Translator Script-->
+<!--<script src="js/multi-language.js"></script>-->
+<script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js"></script>
 <%@include file="./kawaiibottags.jspf" %>
 
 <!--load track bar case-by-case -->

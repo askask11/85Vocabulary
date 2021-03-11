@@ -1,0 +1,20 @@
+[{
+        "id": "footer-icp",
+        "langs": {
+            "cn": "ICP备案号",
+            "en": "ICP Profiling ID"
+        }
+    }, {
+        "id": "footer-author",
+        "langs": {
+            "cn": "高健卿 制作",
+            "en": "Made By Jianqing Gao"
+        }
+    }, {
+        "id": "footer-contact",
+        "langs": {
+            "cn": "联系方式",
+            "en": "Contact"
+        }
+    }
+]

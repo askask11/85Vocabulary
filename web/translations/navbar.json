@@ -1,0 +1,32 @@
+[{
+        "id": "website-title",
+        "langs": {
+            "cn": "85背单词",
+            "en": "85 Vocabulary"
+        }
+    }, {
+        "id": "nav-mainpage",
+        "langs": {
+            "cn": "主页",
+            "en": "Home"
+        }
+    }, {
+        "id": "nav-downloadhw",
+        "langs": {
+            "cn": "作业下载",
+            "en": "Quick Assignment"
+        }
+    }, {
+        "id": "nav-wbook",
+        "langs": {
+            "cn": "一键生成错题本",
+            "en": "Progress Report"
+        }
+    }, {
+        "id": "nav-weeklyquiz",
+        "langs": {
+            "cn": "安琪小天使专用",
+            "en": "Weekly Quiz"
+        }
+    }
+]

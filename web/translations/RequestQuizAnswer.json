@@ -1,0 +1,95 @@
+[
+    {
+        "id": "title",
+        "langs": {
+            "cn": "测试答案",
+            "en": "Weekly Quiz Answer"
+        }
+    }, {
+        "id": "ts1",
+        "langs": {
+            "cn": "&#128519; 可爱的Angel终于来啦！ ",
+            "en": "&#128519; Welcome, Angel!"
+        },
+        "attr": {
+            "title": {
+                "cn": "对就是可爱的你~",
+                "en": "Yes, I mean you."
+            }
+        }
+    }, {
+        "id": "ts2",
+        "langs": {
+            "cn": "输入测试ID看看我做得怎么样吧",
+            "en": "Enter quiz ID to view my quiz paper"
+        },
+        "attr": {
+            "title": {
+                "cn": "就...就在下面哦!",
+                "en": "Underneath here:"
+            }
+        }
+    }, {
+        "id": "mainImage",
+       
+        "attr": {
+            "title": {
+                "cn": "喜欢这张图片吗",
+                "en": "Do you like this image?"
+            }
+        }
+    }, {
+        "id": "idInput",
+        
+        "attr": {
+            "title": {
+                "cn": "在这里输入我们的暗号才能继续哦~",
+                "en": "Enter the secret code to continue."
+            }
+        }
+    }, {
+        "id": "t4",
+        "langs": {
+            "cn": "输入秘密暗号以继续",
+            "en": "Enter Secret Code To Continue"
+        }
+    }, {
+        "id": "submitbtn",
+        "attr": {
+            "title": {
+                "cn": "点击即可提交哦~",
+                "en": "Click to Submit~"
+            }
+        }
+    }, {
+        "id": "ts5",
+        "langs": {
+            "cn": "提交",
+            "en": "Submit"
+        }
+    }, {
+        "id": "post-submit",
+        
+        "attr": {
+            "title": {
+                "cn": "请稍等哦！ 爱你~",
+                "en": "Please wait..."
+            }
+        }
+    }, {
+        "id": "ts7",
+        "langs": {
+            "cn": "正在查询，请稍等哦~",
+            "en": "Fetching record, please wait!"
+        }
+    }, {
+        "id": "angelCaptcha",
+        
+        "attr": {
+            "title": {
+                "cn": "点击更换验证码",
+                "en": "Click to update captcha."
+            }
+        }
+    }
+]

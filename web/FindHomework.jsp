@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Download Your BMC Homework</title>
+        <title id="title">Download Your BMC Homework</title>
         <%@include file="/WEB-INF/jspf/headtags.jspf" %>
         <script src="js/findhomework.js"></script>
     </head>
@@ -20,9 +20,9 @@
         <%@include file="/WEB-INF/jspf/navbar.jspf" %>
         
         <div class="jumbotron">
-            <h1 class="text-center">下载作业</h1>
+            <h1 class="text-center" id="t1">下载作业</h1>
             <br>
-        <h5 class="text-center">&#128221; 你可以在这里一键下载你的BMC的作业，<strong>无需登录</strong></h5>
+        <h5 class="text-center" id="h2">&#128221; 你可以在这里一键下载你的BMC的作业，<strong>无需登录</strong></h5>
         </div>
         
         <div class="container">
@@ -32,7 +32,7 @@
                 
                 
                 <form onsubmit="findHomework();" target="tt" action="about:blank" accept-charset="utf-8">
-                <div class="text-center" style="">
+                <div class="text-center" style="" id="h3">
                     请输入姓名: 
                 </div>
                 <br>
@@ -44,7 +44,7 @@
                    
                 </div>
                 <br>
-                <div class="text-center">请输入要下载的作业日期:<br>如无日历选择器，格式： (yyyy-mm-dd)</div>
+                <div class="text-center" id="h4">请输入要下载的作业日期:<br><span id="h5">如无日历选择器，格式： (yyyy-mm-dd)</span></div>
                 
                 <br>
                 <div class="text-center">
@@ -57,14 +57,18 @@
                 <br>
                 <div class="text-center"><strong id="msg"></strong></div>
                 <button type="submit" id="submitButton" class="arrowbutton" style="display: block; margin: auto;" >
-                    <span>提交</span>
+                    <span id="h6">提交</span>
                 </button>
                 <br><!-- third party page -->
-                <div class="text-center">提示：您将被转到由BMC提供的作业页面</div>
+                <div class="text-center" id="h7">提示：您将被转到由BMC提供的作业页面</div>
                 </form>
             </div>
             <iframe name="tt" id="tt" style="width: 1px; height:1px; visibility: hidden;"></iframe>
         </div>
         <%@include file="/WEB-INF/jspf/footer.jspf" %>
+        <!-- Translate site -->
+        <script>
+            makeTranslator("FindHomework");
+        </script>
     </body>
 </html>

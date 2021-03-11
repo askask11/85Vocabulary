@@ -1,0 +1,59 @@
+[
+    {
+        "id": "title",
+        "langs": {
+            "cn": "下载作业",
+            "en": "Download BMC Homework"
+        }
+    }, {
+        "id": "t1",
+        "langs": {
+            "cn": "下载作业",
+            "en": "Download BMC Homework"
+        }
+    }, {
+        "id": "h2",
+        "langs": {
+            "cn": "&#128221; 你可以在这里一键下载你的BMC的作业，<strong>无需登录</strong>",
+            "en": "&#128221; One-click download your BMC assignment，<strong>NO login</strong>"
+        }
+    }, {
+        "id": "h3",
+        "langs": {
+            "cn": "请输入姓名:",
+            "en": "Full Name:"
+        }
+    }, {
+        "id": "h4",
+        "langs": {
+            "cn": "请输入要下载的作业日期:",
+            "en": "Homework Date:"
+        }
+    }, {
+        "id": "h5",
+        "langs": {
+            "cn": "如无日历选择器，格式： (yyyy-mm-dd)",
+            "en": "If no calendar appears, format: yyyy-mm-dd"
+        }
+    }, {
+        "id": "h6",
+        "langs": {
+            "cn": "提交",
+            "en": "Submit"
+        }
+    }, {
+        "id": "h7",
+        "langs": {
+            "cn": "提示：您将被转到由BMC提供的作业页面",
+            "en": "You will be redirected to a page provided by BMC edu."
+        }
+    }, {
+        "id": "nameInput",
+        "attr": {
+            "placeholder": {
+                "cn": "姓名",
+                "en": "Full Name"
+            }
+        }
+    }
+]

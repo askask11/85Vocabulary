@@ -8,6 +8,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+        <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
         <title>85背单词功能介绍</title>
         <style>
             a {
@@ -109,39 +110,39 @@
         <!--Boostrap.js-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
-
+        <script src="https://file.jianqinggao.com/submissions/multi-language.js"></script>
     </head>
 
     <body >
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="color: white;">
-            <a class="navbar-brand" href="#">85背单词&#128175;</a>
+            <a class="navbar-brand localized" href="#">{"cn":"85背单词&#128175;","en":"85 Vocab&#128175;"}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index" title="前往本站的主页">&#127968; 主页</a>
+                        <a class="nav-link" href="index" title="前往本站的主页">&#127968; <span class="localized">{"cn":"主页","en":"Homepage"}</span></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" title="这里可以一键下载你当天的BMC作业，无需登录系统。" href="FindHomework">&#128421; 作业下载</a>
+                        <a class="nav-link localized" title="这里可以一键下载你当天的BMC作业，无需登录系统。" href="FindHomework">{"cn":"&#128421; 作业下载","en":"&#128421; Homework Download"}</a>
                     </li>
 
 
                     <li class="nav-item" >
-                        <a class="nav-link" title="这里可以一键生成你某天BMC作业的错题本。包含你的订正，可分享，可打印" href="RequestFQuestion">&#10060; 一键生成错题本</a>
+                        <a class="nav-link localized" title="这里可以一键生成你某天BMC作业的错题本。包含你的订正，可分享，可打印" href="RequestFQuestion">{"cn":"&#10060; 一键生成错题本","en":"&#10060; Wrong Question Report"}</a>
                     </li>
 
                     <li class="nav-item" >
-                        <a class="nav-link" title="嘘~这是我和小天使的秘密" href="RequestQuizAnswer">&#128519; 安琪小天使专用</a>
+                        <a class="nav-link localized" title="嘘~这是我和小天使的秘密" href="RequestQuizAnswer">{"cn":"&#128519; 安琪小天使专用","en":"&#128519; Weekly Quiz System"}</a>
                     </li>
                 </ul>
             </div>  
         </nav>
         <div id="header">
-            <h1 style="font-size:50px;">85背单词APP功能介绍</h1>
+            <h1 style="font-size:50px;" class="localized">{"cn":"85背单词APP功能介绍","en":"About 85 Vocabulary"}</h1>
         </div>
 
         <div id="article">
@@ -151,26 +152,43 @@
                 <!-- Links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index">&#127968; 返回主页</a>
+                        <a class="nav-link localized" href="index">{"cn":"&#127968; 返回主页","en":"&#127968; Main Page"}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#s1">&#128421; 作业下载</a>
+                        <a class="nav-link localized" href="#s1">{"cn":"&#128421; 作业下载","en":"&#128421; Homework Download"}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#s2">&#10060; 错题报告</a>
+                        <a class="nav-link localized" href="#s2">{"cn":"&#10060; 错题报告","en":"&#10060; Wrong Question Report"}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#s3">&#128519; 周测管理</a>
+                        <a class="nav-link localized" href="#s3">{"cn":"&#128519; 周测管理","en":"&#128519; Weekly Quiz System"}</a>
                     </li>
                 </ul>
 
             </nav>
             <div id="main" class="container">
                 <br><br>
+                <!-- 语言 -->
+
+                <div style="text-align:right;" >
+                    Language/语言：<select id="languageSelect">
+                        <option value="cn">
+                            简体中文
+                        </option>
+                        <option value="en">
+                            English
+                        </option>
+                    </select>
+                </div>
+                <br>
                 <div id="s1" class="books">
-                    <h3 class="margined"><a name="type1">作业下载</a></h3>
-                    <a href="FindHomework" class="title margined">绕过官方系统繁琐步骤，免登陆一键下载</a>
-                    <p class="info">帮我背单词APP一大亮点：简洁。绕开官方系统的繁琐步骤，无需登录既可直接下载你的作业。系统自动把所有作业生成一个pdf，再也不用去日历里找作业了！效率提升，事倍功半</p>
+                    <h3 class="margined"><a name="type1" class="localized">{"cn":"作业下载","en":"Download Homework"}</a></h3>
+                    <a href="FindHomework" class="title margined localized">
+                        {"cn":"绕过官方系统繁琐步骤，免登陆一键下载","en":"NO login! Convinent Homework One-click download system."}
+                    </a>
+                    <p class="info localized">
+                        {"cn":"帮我背单词APP一大亮点：简洁。绕开官方系统的繁琐步骤，无需登录既可直接下载你的作业。系统自动把所有作业生成一个pdf，再也不用去日历里找作业了！效率提升，事倍功半","en":"One highlight of the help me recite vocabulary app: simplicity. Bypass the cumbersome steps of the official system, you can download your work directly without logging in. The system automatically generates a pdf for all assignments, so you no longer need to look for assignments in the calendar! Improve efficiency and get twice the result with half the effort"}
+                    </p>
 
                     <img class="centralized" src="https://img.85vocab.com/images/85vocab-hw.gif" style="width:80%;">
                     <br>
@@ -178,9 +196,10 @@
                     <hr size="1">
                 </div>
                 <div id="s2" class="books">
-                    <h3><a class="margined" name="type2">作业报告</a></h3>
-                    <a href="RequestFQuestion" class="margined" class="title">一键为您量身定制错题本，摆脱重复工作</a>
-                    <p class="info">无需复制粘贴：小手轻轻一点，量身定做你的错题报告！还可以一键生成微信分享消息哦！
+                    <h3><a class="margined localized" name="type2">{"cn":"作业报告","en":"Progress Report"}</a></h3>
+                    <a href="RequestFQuestion" class="margined title localized">{"cn":"一键为您量身定制错题本，摆脱重复工作","en":"One-click personal report generation. Get more, work less."}</a>
+                    <p class="info localized">
+                        {"cn":"无需手动制作：小手轻轻一点，量身定做你的错题报告！还可以一键生成微信分享消息哦！","en":"No need to write everything manually! Simply click on \"Generate\", you personal SAT progress report will be on your way! We also support safe-share link and share message generation!"}
 
                     </p>
                     <div class="text-center">
@@ -188,46 +207,25 @@
 
                         <img class="centralized" src="https://img.85vocab.com/images/85vocab%20report.gif" style="width:80%;">
 
-
-
-
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">微信消息</h5>
+                                        <h5 class="modal-title localized" id="exampleModalLabel" >{"cn":"微信消息","en":"Wechat Message"}</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">×</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        微信消息预览：<span id="copySuccess" style="color: green;display: none;">✅复制成功！</span>
-                                        <textarea id="wechatMessage" style="height: 500px; width: 100%;margin: auto;" readonly spellcheck="false">【高健卿同学2020-09-22的专属错题本】
- 完整错题本请访问: https://sourl.cn/nkpfwy
-
-******特殊作业列表********
-
-📌未交作业数量: 0
-📱视频面测数量: 0
-
-******已提交作业列表********
-
-⭐️OG4-S4-数学考试-计算器
-   -✅正确题目数量: 36
-   -❌错误题目数量: 2
-   -👀空白题目数量: 0
-
-⭐️OG3-S3-数学测试-无计算器
-   -✅正确题目数量: 19
-   -❌错误题目数量: 1
-   -👀空白题目数量: 0
-
-
-**********85vocab.com***********</textarea>
+                                        <span class="localized">{"cn":"微信消息预览：\n","en":"Sharing message preview:"}</span>
+                                        <span id="copySuccess" class="localized" style="color: green;display: none;">{"cn":"✅复制成功！","en":"✅Copied Successfully!"}</span>
+                                        <textarea id="wechatMessage" style="height: 500px; width: 100%;margin: auto;" class="localized" spellcheck="false">
+{"cn":"【高健卿同学2020-09-22的专属错题本】\n完整错题本请访问: https://sourl.cn/nkpfwy \n\n ******特殊作业列表********\n\n📌未交作业数量: 0\n📱视频面测数量: 0\n\n******已提交作业列表********\n\n⭐️OG4-S4-数学考试-计算器\n   -✅正确题目数量: 36\n   -❌错误题目数量: 2\n   -👀空白题目数量: 0\n\n⭐️OG3-S3-数学测试-无计算器\n   -✅正确题目数量: 19\n   -❌错误题目数量: 1\n   -👀空白题目数量: 0\n\n**********85vocab.com***********","en":"[Progress report for Gao Jianqing on 2020-09-22]\n\nFor the complete report, please visit: https://sourl.cn/nkpfwy \n \n******Special Job List********\n\n📌Number of special assignments: 0\n📱Video tests: 0\n\n******List of submitted jobs********\n\n⭐️OG4-S4-Math Exam-Calculator\n    -✅Number of correct questions: 36\n    -❌Number of wrong questions: 2\n    -👀Number of blank questions: 0\n\n⭐️OG3-S3- Math test-no calculator\n    -✅Number of correct questions: 19\n    -❌Number of wrong questions: 1\n    -👀Number of blank questions: 0\n\n\n**********85vocab.com***********"}
+                                        </textarea>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                                        <button type="button" id="cpwc" class="btn btn-primary .btn-success" clipboard-action="copy" data-clipboard-target="#wechatMessage">复制</button>
+                                        <button type="button" class="btn btn-secondary localized" data-dismiss="modal">{"cn":"关闭","en":"Close"}</button>
+                                        <button type="button" id="cpwc" class="btn btn-primary .btn-success localized" clipboard-action="copy" data-clipboard-target="#wechatMessage">{"cn":"复制","en":"Copy"}</button>
 
                                     </div>
                                 </div>
@@ -237,7 +235,7 @@
                         <br>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
                             <img src="https://img.85vocab.com/icons/wechat.svg" width="23">
-                            微信消息示例
+                            <span class="localized">{"cn":"微信消息示例","en":"Sharing Message Example"}</span>
                         </button>
 
                     </div>
@@ -247,18 +245,18 @@
                 <hr size="1">
                 <div id="s3" class="books">
                     <h3 class="margined">
-                        <a name="type3">
-                            周测系统
+                        <a name="type3" class="localized">
+                            {"cn":"周测系统","en":"Weekly Quiz System"}
                         </a>
                     </h3>
 
-                    <a href="https://85vocab.com/RequestQuizAnswer?id=1" class="title margined">针对周测设计的批改系统，方便了师生交流，答案管理和成绩统计。</a>
+                    <a href="https://85vocab.com/RequestQuizAnswer?id=1" class="title margined localized">{"cn":"针对周测设计的批改系统，方便了师生交流，答案管理和成绩统计。","en":"This correction system is designed for the weekly test, which facilitates teacher-student communication, answer management and score statistics."}</a>
                     <div id="accordion">
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                    1对1私人化辅导订正
+                                <a class="card-link localized" data-toggle="collapse" href="#collapseOne">
+                                    {"cn":"1对1私人化辅导订正","en":"1v1 Personalized Answer Correction"}
                                 </a>
                             </div>
                             <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -270,9 +268,9 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                    人工智能助力分数统计
-                                    <!--人工智能的定义：先人工再智能-->
+                                <a class="collapsed card-link localized" data-toggle="collapse" href="#collapseTwo">
+                                    {"cn":"人工智能助力分数统计","en":"Convinent Score Report System"}
+                                    
                                 </a>
                             </div>
                             <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -284,8 +282,8 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                    最贴心的答案管理
+                                <a class="collapsed card-link localized" data-toggle="collapse" href="#collapseThree">
+                                    {"cn":"最贴心的答案管理","en":"Considerate All-In-One File Management"}
                                 </a>
                             </div>
                             <div id="collapseThree" class="collapse" data-parent="#accordion">
@@ -309,11 +307,13 @@
 
 
         <div id="footer">
-            制作：高健卿<br>
-            联系：support@jianqinggao.com<br>
-            ICP备案号：<a href="http://beian.miit.gov.cn">粤ICP备2020113241号</a>, 经批准允许入中国大陆网。
+            <span class="localized">{"cn":"制作：高健卿","en":"Made By Jianqing Gao"}</span><br>
+            <span class="localized">{"cn":"联系：","en":"Contact: "}</span>support@jianqinggao.com<br>
+            <span class="localized">{"cn":"ICP备案号：","en":"ICP Profiling Number"}</span><a href="http://beian.miit.gov.cn">粤ICP备2020113241号</a><span class="localized">{"cn":", 经批准允许入中国大陆网。","en":", permitted to serve on Mainland China."}</span>
         </div>
-        <script>new ClipboardJS('#cpwc');
+        <script>
+            var translator = new MultiLanguage("cn", "localized", select = document.getElementById("languageSelect"));
+            new ClipboardJS('#cpwc');
 
             document.getElementById("cpwc").addEventListener("click", (e) => {
                 $("#copySuccess").fadeIn("slow");

@@ -1,0 +1,83 @@
+[
+    {
+        "id":"title",
+        "langs":{
+            "cn":" 85背单词 ",
+            "en":" 85Vocabulary "
+        }
+    },{
+        "id":"t1",
+        "langs":{
+            "cn":"85背单词",
+            "en":"85 Vocabulary"
+        }
+    },
+    {
+        "id":"t2",
+        "langs":{
+            "cn":"为您量身定制的工具集~",
+            "en":"Strengthen your vocabulary with powerful tools"
+        }
+    },{
+        "id":"t-3",
+        "langs":{
+            "cn":" 菜单",
+            "en":" Menu"
+        }
+    },
+    {
+        "id":"t-4",
+        "langs":{
+            "cn":"介绍",
+            "en":"Introduction"
+        }
+    },{
+        "id":"t5",
+        "langs":{
+            "cn":"词测答案核对",
+            "en":"Vocab Answer Check"
+        }
+    },{
+        "id":"t6",
+        "langs":{
+            "cn":"作业下载",
+            "en":"Homework Download"
+        }
+    },{
+        "id":"t7",
+        "langs":{
+            "cn":"统计错题报告",
+            "en":"Progress Report"
+        }
+    },{
+        "id":"t8",
+        "langs":{
+            "cn":"Angel御用",
+            "en":"Weekly Quiz"
+        }
+    },{
+        "id":"t9",
+        "langs":{
+            "cn":"查看测试答案",
+            "en":"For Answer"
+        }
+    },{
+        "id":"t10",
+        "langs":{
+            "cn":"请输入测试ID",
+            "en":"Enter test ID"
+        }
+    },{
+        "id":"t11",
+        "langs":{
+            "cn":"测试ID:",
+            "en":"Test ID"
+        }
+    },{
+        "id":"t12",
+        "langs":{
+            "cn":"确认",
+            "en":"Confirm"
+        }
+    }
+]

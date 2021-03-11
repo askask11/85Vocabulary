@@ -1,0 +1,147 @@
+[
+    {
+        "id": "title",
+        "langs": {
+            "cn": "生成专属错题本",
+            "en": "Generate Progress Report"
+        }
+    },
+    {
+        "id": "ts1",
+        "langs": {
+            "cn": "生成你的专属错题本 &#128221;",
+            "en": "Generate Your Progress Report &#128221;"
+        }
+    },
+    {
+        "id": "ts2",
+        "langs": {
+            "cn": "现在生成 &#128221;",
+            "en": "Get it now! &#128221;"
+        }
+    },
+    {
+        "id": "ts3",
+        "langs": {
+            "cn": "仅供个人使用，非商用。",
+            "en": "Not for commercial use"
+        }
+    }, {
+        "id": "ts4",
+        "langs": {
+            "cn": "编辑",
+            "en": "Edit"
+        }
+    },
+    {
+        "id": "ts5",
+        "langs": {
+            "cn": "退出",
+            "en": "Exit"
+        }
+    }, {
+        "id": "ts6",
+        "langs": {
+            "cn": "选择错题本日期 &#128198;",
+            "en": "Choose Date &#128198;"
+        }
+    }, {
+        "id": "ts7",
+        "langs": {
+            "cn": "提交",
+            "en": "Submit"
+        }
+    }, {
+        "id": "sbmButton",
+        "attr": {
+            "title": {
+                "cn": "立即获取你当日的错题信息",
+                "en": "Get your current info now!"
+            }
+        }
+    }, {
+        "id": "ts8",
+        "langs": {
+            "cn": "生成小码短链接",
+            "en": "Get Shortened link with Xiaomark"
+        }
+    }, {
+        "id": "ts9",
+        "langs": {
+            "cn": "编辑BMC Account",
+            "en": "Edit BMC Account"
+        }
+    }, {
+        "id": "realName",
+        "attr": {
+            "title": {
+                "cn": "这是从BMC系统获取的姓名，如有问题请咨询BMC员工。",
+                "en": "Name from your BMC System"
+            }
+        }
+    }, {
+        "id": "delbtn",
+        "langs": {
+            "cn": "删除",
+            "en": "Delete"
+        }
+    }, {
+        "id": "loadData",
+        "langs": {
+            "cn": "<span>加载数据</span>",
+            "en": "<span>Load Data</span>"
+        }
+    }, {
+        "id": "ts11",
+        "langs": {
+            "cn": "确定删除账户？",
+            "en": "Sure to delete your account?"
+        }
+    }, {
+        "id": "ts12",
+        "langs": {
+            "cn": "警告！此操作不可逆转",
+            "en": "Warning! Irrevertable operation!"
+        }
+    }, {
+        "id": "ts13",
+        "langs": {
+            "cn": "这将会永久和BMC Account说拜拜，确认要继续吗？",
+            "en": "You will lose your account FOREVER! Continue?"
+        }
+    }, {
+        "id": "cancelbtn1",
+        "langs": {
+            "cn": "取消并返回编辑",
+            "en": "Cancel"
+        },
+        "attr": {
+            "title": {
+                "cn": "取消并返回",
+                "en": "Cancel & Return"
+            },
+            "onclick": {
+                "cn": "document.getElementById('p1trigger').click();notify('很好~欢迎━(*｀∀´*)ノ亻!继续使用85Vocab.com.');",
+                "en": "document.getElementById('p1trigger').click();notify('Good! Welcome Back━(*｀∀´*)ノ亻!');"
+            }
+        }
+    }, {
+        "id": "ts14",
+        "langs": {
+            "cn": "继续",
+            "en": "Continue"
+        },
+        "attr": {
+            "title": {
+                "cn": "不可反悔，继续吗",
+                "en": "Not revertable, are you sure?"
+            }
+        }
+    }, {
+        "id": "waitmsgg",
+        "langs": {
+            "cn": "请稍后， 正在为您生成错题本<br><br>约需一分钟左右。",
+            "en": "Please wait... Generating Progress report for you... <br><br>It will take about a minute."
+        }
+    }
+]
