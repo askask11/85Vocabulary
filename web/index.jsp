@@ -32,6 +32,7 @@
             <br>
             <form action="Intro.html">
                 <button 
+                    id="intro"
                     title="本站介绍" 
                     type="submit"
                     class="btn btn-lg btn-outline-primary btn-block"
@@ -41,7 +42,9 @@
             <br><br>
             <div class="row">
                 <div class="col-md-6 op" id="dahd">
-                    <button title="单词测试答案核对"
+                    <button 
+                        id="answercheck"
+                        title="单词测试答案核对"
                             type="button"
                             class="btn btn-lg btn-outline-primary btn-default btn-block"
                             onclick="document.getElementById('di1').classList.add('hidden');document.getElementById('di2').classList.remove('hidden');"
@@ -61,6 +64,7 @@
                 <div class="col-md-6 op" id="zyxz">
                     <form action="FindHomework" method="GET">
                         <button 
+                            id="hwbtn"
                             title="下载个人当天的BMC作业" 
                             type="submit"
                             class="btn btn-lg btn-outline-primary btn-block"
@@ -73,6 +77,7 @@
                 <div class="col-md-6 op" id="ctb">
                     <form action="RequestFQuestion" method="GET">
                         <button
+                            id="repbtn"
                             type="submit"
                             class="btn btn-lg btn-outline-primary btn-block"
                             title="制作专属于你个人的错题统计订正报告"
@@ -81,7 +86,7 @@
                 </div>
                 <div class="col-md-6 op" id="angel">
                     <form action="RequestQuizAnswer" method="GET">
-                        <button title="这个是安淇小姐姐才能看的秘密哦！"
+                        <button id="wkbtn" title="这个是安淇小姐姐才能看的秘密哦！"
                                 class="btn btn-lg btn-outline-primary btn-block">&#128519; <span id="t8">Angel御用</span></button>
                     </form>
                 </div>

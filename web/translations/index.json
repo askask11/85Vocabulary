@@ -1,83 +1,129 @@
 [
     {
-        "id":"title",
-        "langs":{
-            "cn":" 85背单词 ",
-            "en":" 85Vocabulary "
+        "id": "title",
+        "langs": {
+            "cn": " 85背单词 ",
+            "en": " 85Vocabulary "
         }
-    },{
-        "id":"t1",
-        "langs":{
-            "cn":"85背单词",
-            "en":"85 Vocabulary"
-        }
-    },
-    {
-        "id":"t2",
-        "langs":{
-            "cn":"为您量身定制的工具集~",
-            "en":"Strengthen your vocabulary with powerful tools"
-        }
-    },{
-        "id":"t-3",
-        "langs":{
-            "cn":" 菜单",
-            "en":" Menu"
+    }, {
+        "id": "t1",
+        "langs": {
+            "cn": "85背单词",
+            "en": "85 Vocabulary"
         }
     },
     {
-        "id":"t-4",
-        "langs":{
-            "cn":"介绍",
-            "en":"Introduction"
+        "id": "t2",
+        "langs": {
+            "cn": "为您量身定制的工具集~",
+            "en": "Strengthen your vocabulary with powerful tools"
         }
-    },{
-        "id":"t5",
-        "langs":{
-            "cn":"词测答案核对",
-            "en":"Vocab Answer Check"
+    }, {
+        "id": "t-3",
+        "langs": {
+            "cn": " 菜单",
+            "en": " Menu"
         }
-    },{
-        "id":"t6",
-        "langs":{
-            "cn":"作业下载",
-            "en":"Homework Download"
+    },
+    {
+        "id": "t-4",
+        "langs": {
+            "cn": "介绍",
+            "en": "Introduction"
         }
-    },{
-        "id":"t7",
-        "langs":{
-            "cn":"统计错题报告",
-            "en":"Progress Report"
+    }, {
+        "id": "t5",
+        "langs": {
+            "cn": "词测答案核对",
+            "en": "Vocab Answer Check"
         }
-    },{
-        "id":"t8",
-        "langs":{
-            "cn":"Angel御用",
-            "en":"Weekly Quiz"
+    }, {
+        "id": "t6",
+        "langs": {
+            "cn": "作业下载",
+            "en": "Homework Download"
         }
-    },{
-        "id":"t9",
-        "langs":{
-            "cn":"查看测试答案",
-            "en":"For Answer"
+    }, {
+        "id": "t7",
+        "langs": {
+            "cn": "统计错题报告",
+            "en": "Progress Report"
         }
-    },{
-        "id":"t10",
-        "langs":{
-            "cn":"请输入测试ID",
-            "en":"Enter test ID"
+    }, {
+        "id": "t8",
+        "langs": {
+            "cn": "Angel御用",
+            "en": "Weekly Quiz"
         }
-    },{
-        "id":"t11",
-        "langs":{
-            "cn":"测试ID:",
-            "en":"Test ID"
+    }, {
+        "id": "t9",
+        "langs": {
+            "cn": "查看测试答案",
+            "en": "For Answer"
         }
-    },{
-        "id":"t12",
-        "langs":{
-            "cn":"确认",
-            "en":"Confirm"
+    }, {
+        "id": "t10",
+        "langs": {
+            "cn": "请输入测试ID",
+            "en": "Enter test ID"
+        }
+    }, {
+        "id": "t11",
+        "langs": {
+            "cn": "测试ID:",
+            "en": "Test ID"
+        }
+    }, {
+        "id": "t12",
+        "langs": {
+            "cn": "确认",
+            "en": "Confirm"
+        }
+    }
+    , {
+        "id": "repbtn",
+        "attr": {
+            "title": {
+                "cn": "制作专属于你个人的错题统计订正报告",
+                "en": "Make your personal report!"
+            }
+        }
+    }, {
+        "id": "wkbtn",
+        
+        "attr": {
+            "title": {
+                "cn": "这个是安淇小姐姐才能看的秘密哦!",
+                "en": "Weekly quiz answer."
+            }
+        }
+    }, {
+        "id": "answercheck",
+        
+        "attr": {
+            "title": {
+                "cn": "单词测试答案核对!",
+                "en": "Vocab quiz answer check."
+            }
+        }
+    }, {
+        "id": "hwbtn",
+        
+        "attr": {
+            "title": {
+                "cn": "下载个人当天的BMC作业!",
+                "en": "Download your BMC Homework!"
+            }
+        }
+    }
+    , {
+        "id": "intro",
+        
+        "attr": {
+            "title": {
+                "cn": "本站介绍",
+                "en": "Introduction to this site."
+            }
         }
     }
 ]
